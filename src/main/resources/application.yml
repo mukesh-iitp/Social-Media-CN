@@ -17,7 +17,7 @@ spring:
         show-sql: true
     output:
       ansi:
-         enabled: always
+         enabled: always #for color coded logs
         
         
 management:
