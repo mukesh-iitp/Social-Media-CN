@@ -48,3 +48,6 @@ logging:
 
   file:
     name: logger.log #to enable logs written on a file
+    
+  pattern:
+    file: '%d{yyyy-MM-dd} [%level] %c{1.} [%t] %m%n'
