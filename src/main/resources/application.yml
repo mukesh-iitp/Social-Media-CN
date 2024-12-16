@@ -45,4 +45,6 @@ logging:
     com: 
       example:
         socialMedia: TRACE
-      
+
+  file:
+    name: logger.log #to enable logs written on a file
