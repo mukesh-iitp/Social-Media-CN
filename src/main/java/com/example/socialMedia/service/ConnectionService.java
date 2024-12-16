@@ -17,12 +17,16 @@ import io.micrometer.core.instrument.composite.CompositeMeterRegistry;
 
 @Service
 public class ConnectionService {
+	
+	Logger logger = LoggerFactory.getLogger(ConnectionService.class);
 
 	@Autowired
 	ConnectionDal connectionDal;
 	
 	
 	public List<Connection> getConnections() {
+		logger.trace("Starting connection service: level = TRACE");
+		logger.info("Starting connection service: level = INFO");
 		return connectionDal.findAll();
 	}
 

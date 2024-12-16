@@ -45,6 +45,8 @@ public class userController {
 	@Timed(value="getConnections.api")
 	public List<Connection> getConnections() {
 		logger.info("Starting to get connections!");
+		logger.trace("Starting get connections: level = TRACE");
+		
 		List<Connection> responseConnections =  connectionService.getConnections();
 		
 		logger.info("Response: " + responseConnections);
